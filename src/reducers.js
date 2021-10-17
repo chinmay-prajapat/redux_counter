@@ -9,7 +9,7 @@ export const reducer = (state = initialState, action) => {
     return { count: state.count - 1 };
   }
   if (action.type === SET) {
-    return { count: parseInt(action.payload, 10) };
+    return { count: parseInt(action.payload) };
   }
 
   return state;
